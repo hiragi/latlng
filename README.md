@@ -15,4 +15,4 @@ If you want to measure the Distance Between Tokyo and Osaka, you use like this.
 
 
 
-* Hiragi Auzee [ hiragi.auzee@gmail.com ]
+Created by Hiragi Auzee [ hiragi.auzee@gmail.com ]
