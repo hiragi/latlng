@@ -36,8 +36,8 @@ def main():
 		destination = options.destination
 		earth_r = 6378.18
 
-		start_lat, start_lag = gmaps.address_to_latlng(departure)
-		goal_lat, goal_lag = gmaps.address_to_latlng(destination)
+		start_lat, start_lng = gmaps.address_to_latlng(departure)
+		goal_lat, goal_lng = gmaps.address_to_latlng(destination)
 
 		if start_lat < goal_lat:
 			dig2rag_num = start_lat
@@ -45,22 +45,22 @@ def main():
 			dig2rag_num = goal_lat
 
 		dif_lat = math.radians(abs(start_lat - goal_lat))
-		dif_lag = math.radians(abs(start_lag - goal_lag))
+		dif_lng = math.radians(abs(start_lng - goal_lng))
 
 		nsdist = earth_r * dif_lat
-		ewdist = earth_r * math.cos(math.radians(dig2rag_num)) * dif_lag
+		ewdist = earth_r * math.cos(math.radians(dig2rag_num)) * dif_lng
 
 		dist = math.sqrt(nsdist**2 + ewdist**2)
 
 		"""Debug
 		print(dif_lat)
-		print(dif_lag)
+		print(dif_lng)
 		print(nsdist)
 		print(ewdist)
 		"""
 		print
-		print("Departure   : %s\t (latitude : %s, longitude : %s)" % (departure, start_lat, start_lag))
-		print("Destination : %s\t (latitude : %s, longitude : %s)" % (destination, goal_lat, goal_lag))
+		print("Departure   : %s\t (latitude : %s, longitude : %s)" % (departure, start_lat, start_lng))
+		print("Destination : %s\t (latitude : %s, longitude : %s)" % (destination, goal_lat, goal_lng))
 		print("Distance    : %f km" % dist)
 		print
 
