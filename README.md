@@ -9,6 +9,8 @@ You have to install _googlemaps_ if you use this.
 Usage
 =====
 
+  > $latlng -s [start point] -g [goal]
+
 If you want to measure the Distance Between Tokyo and Osaka, you use like this.
 
   > $latlng -s tokyo -g osaka
