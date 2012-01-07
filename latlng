@@ -53,11 +53,12 @@ def main():
 		ewdist = earth_r * math.cos(math.radians(dig2rag_num)) * dif_lng
 
 		dist = math.sqrt(nsdist**2 + ewdist**2)
+		mile = dist/1.609
 
 		print
 		print("Departure   : %s\t (latitude : %s, longitude : %s)" % (departure, start_lat, start_lng))
 		print("Destination : %s\t (latitude : %s, longitude : %s)" % (destination, goal_lat, goal_lng))
-		print("Distance    : %f km" % dist)
+		print("Distance    : %f km (%f miles)" % (dist, mile))
 		print
 
 if __name__ == "__main__":
