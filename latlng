@@ -57,7 +57,9 @@ def main():
 
 		print
 		print("Departure   : %s\t (latitude : %s, longitude : %s)" % (departure, start_lat, start_lng))
+		print
 		print("Destination : %s\t (latitude : %s, longitude : %s)" % (destination, goal_lat, goal_lng))
+		print
 		print("Distance    : %f km (%f miles)" % (dist, mile))
 		print
 
