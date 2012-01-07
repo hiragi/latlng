@@ -11,4 +11,4 @@ Usage
 
 If you want to measure the Distance Between Tokyo and Osaka, you use like this.
 
-  > latlng -s tokyo -g osaka
+  > $latlng -s tokyo -g osaka
