@@ -35,6 +35,7 @@ def main():
 	else:
 		departure = options.departure
 		destination = options.destination
+		# radius of the earth
 		earth_r = 6378.18
 
 		start_lat, start_lng = gmaps.address_to_latlng(departure)
@@ -53,12 +54,6 @@ def main():
 
 		dist = math.sqrt(nsdist**2 + ewdist**2)
 
-		"""Debug
-		print(dif_lat)
-		print(dif_lng)
-		print(nsdist)
-		print(ewdist)
-		"""
 		print
 		print("Departure   : %s\t (latitude : %s, longitude : %s)" % (departure, start_lat, start_lng))
 		print("Destination : %s\t (latitude : %s, longitude : %s)" % (destination, goal_lat, goal_lng))
