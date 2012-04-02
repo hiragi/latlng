@@ -30,6 +30,7 @@ def main():
 	argc = len(argvs)
 
 	if argc != 5:
+		#TODO add help and usage
 		print("Wrong number of arguments")
 		sys.exit()
 	else:
