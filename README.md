@@ -27,4 +27,3 @@ Example
   > Distance    : 399.161054 km (248.080208 miles)
 
 ---------------------
-Author: Hiragi Auzee [ hiragi.auzee@gmail.com ]
